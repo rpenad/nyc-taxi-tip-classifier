@@ -1,4 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data files
+*.csv
+*.h5
+*.parquet
+*.joblib
+
+# Data directories
 data/raw/
 data/interim/
 data/processed/
+
+# Model directories
 models/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
