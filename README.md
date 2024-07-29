@@ -1,6 +1,24 @@
 # NYC Taxi Tip Classifier - Clasificador de Propinas para Viajes en Taxi en NYC (2020) - Inspirado en la charla "Keeping up with Machine Learning in Production" de Shreya Shankar
 
 Este proyecto construye un modelo de clasificación para predecir si una propina en un viaje en taxi en Nueva York será alta o baja, en relacion al notebook llamado 00_nyc-taxi-model.ipynb , en el cual se adiciona una nueva metodologia , al cambiar la herramienta para el entrenamiento  con  TensorFlow para entrenar tu modelo en lugar de scikit-learn. En este nuevo notebook vamos a integrar este nuevo enfoque , asegurándonos de incluir la evaluación del modelo en diferentes meses utilizando métricas como F1-score y curvas ROC.
+## Nueva Estrategia de Clasificación
+
+Se añadió una nueva estrategia de clasificación en el notebook 'ConEstrategia.ipynb'. Esta estrategia incluye:
+
+1. **Diferencias en la selección de características**:
+   - Se implementaron nuevas características derivadas de los datos temporales como `pickup_weekday`, `pickup_hour`, `pickup_minute`, y `work_hours`.
+   - Adicionalmente, se calcularon características relacionadas con la duración y velocidad del viaje (`trip_time` y `trip_speed`).
+
+2. **Modelo de Machine Learning diferente**:
+   - En lugar del modelo original, se utilizó un modelo secuencial de Keras con varias capas densas (`Dense`), que es una red neuronal artificial.
+   - El modelo se entrenó utilizando el optimizador Adam y la función de pérdida de entropía cruzada binaria.
+
+3. **Evaluación del modelo**:
+   - Los resultados muestran que el nuevo modelo obtuvo mejores puntuaciones de F1 y AUC-ROC en comparación con el modelo anterior.
+   - Se generaron y compararon curvas ROC para diferentes meses, lo que permitió una evaluación más detallada del desempeño del modelo a lo largo del tiempo.
+
+Para ejecutar el nuevo notebook, siga las mismas instrucciones descritas anteriormente para la configuración del entorno.
+
 
 ## Estructura del Proyecto
 
