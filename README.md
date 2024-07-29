@@ -1,6 +1,6 @@
-# NYC Taxi Tip Classifier
+# NYC Taxi Tip Classifier - Clasificador de Propinas para Viajes en Taxi en NYC (2020) - Inspirado en la charla "Keeping up with Machine Learning in Production" de Shreya Shankar
 
-Este proyecto construye un modelo de clasificación para predecir si una propina en un viaje en taxi en Nueva York será alta o baja.
+Este proyecto construye un modelo de clasificación para predecir si una propina en un viaje en taxi en Nueva York será alta o baja, en relacion al notebook llamado 00_nyc-taxi-model.ipynb , en el cual se adiciona una nueva metodologia , al cambiar la herramienta para el entrenamiento  con  TensorFlow para entrenar tu modelo en lugar de scikit-learn. En este nuevo notebook vamos a integrar este nuevo enfoque , asegurándonos de incluir la evaluación del modelo en diferentes meses utilizando métricas como F1-score y curvas ROC.
 
 ## Estructura del Proyecto
 
@@ -30,7 +30,7 @@ Este proyecto construye un modelo de clasificación para predecir si una propina
     - `train_model.py`
   - `visualization/`: Scripts para crear visualizaciones exploratorias y orientadas a resultados.
     - `visualize.py`
-
+Clasificador de Propinas para Viajes en Taxi en NYC (2020)
 ## Cómo Reproducir el Proyecto
 
 1. Clonar el repositorio:
